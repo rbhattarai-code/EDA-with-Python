@@ -1,4 +1,4 @@
-Car Dataset Exploratory Data Analysis (EDA)
+Car Dataset Exploratory Data Analysis (EDA) with Python
 Project Overview
 
 This project is focused on performing Exploratory Data Analysis (EDA) on a comprehensive car dataset sourced from Kaggle. Through this analysis, I aim to uncover insights about various car attributes, such as the make, model, year, fuel type, engine specifications, and pricing (MSRP). The project enhances my data analysis skills using Python, Pandas, and Matplotlib.
