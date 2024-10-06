@@ -1,55 +1,59 @@
 Car Dataset Exploratory Data Analysis (EDA)
 Project Overview
 
-This project involves performing Exploratory Data Analysis (EDA) on a dataset of cars. The analysis includes cleaning the data, handling missing values, identifying outliers, and visualizing key insights using Python libraries like pandas, matplotlib, and seaborn.
-Key Objectives:
+This project is focused on performing Exploratory Data Analysis (EDA) on a comprehensive car dataset sourced from Kaggle. Through this analysis, I aim to uncover insights about various car attributes, such as the make, model, year, fuel type, engine specifications, and pricing (MSRP). The project enhances my data analysis skills using Python, Pandas, and Matplotlib.
+Dataset Description
 
-    1.  To clean and prepare the data for analysis by removing duplicates and handling missing values.
-    2. To analyze the relationships between various car attributes (like MSRP, Year, Transmission Type, etc.).
-    3. To identify outliers in the dataset and understand their significance.
-    4. To visualize the data using scatter plots, histograms, and heatmaps.
+The dataset contains 16 columns related to various data of cars:
+
+    Make: The company that manufactures the car.
+    Model: The specific model of the car.
+    Year: The year the car was manufactured.
+    Engine Fuel Type: The type of fuel the car uses.
+    Engine HP: Horsepower of the car's engine.
+    Engine Cylinders: The number of cylinders in the car's engine.
+    Transmission Type: The type of transmission the car uses.
+    Driven Wheels: Whether the car is rear-wheel drive, front-wheel drive, or all-wheel drive.
+    Number of Doors: The number of doors the car has.
+    Market Category: The car’s market category (e.g., luxury, crossover).
+    Vehicle Size: Size of the car (compact, midsize, etc.).
+    Vehicle Style: Style of the car (SUV, sedan, etc.).
+    Highway MPG: Fuel efficiency in miles per gallon on the highway.
+    City MPG: Fuel efficiency in miles per gallon in the city.
+    Popularity: Popularity score of the car.
+    MSRP: Manufacturer's suggested retail price.
+
+Key Steps
+
+    Data Cleaning:
+        Removed duplicate records based on important features like Make, Model, Year, etc.
+        Handled missing values by removing or imputing null values in key columns such as Engine Fuel Type, Engine HP, and Engine Cylinders.
+
+    Visualization & Analysis:
+        Outliers: I identified outliers in the MSRP (price) column and verified that both the highest and lowest values (e.g., a buggati priced at $2,065,902 and a Dodge priced at $2,000) were accurate.
+        Scatter Plots: Visualized relationships between MSRP and features like Driven Wheels to observe trends and clusters.
+        Bar Graphs: Used bar graphs to show the frequency of car manufacturers (Make) and other categorical variables.
+        Heatmap: Built a heatmap to show correlations between numerical variables like Engine HP, city mpg, and highway MPG.
+
+    Findings:
+        Outliers: Identifying and analyzing the outliers helped me distinguish between human errors and legitimate extreme values, crucial in ensuring data accuracy.
+        Trend Insights: Scatter plots and bar graphs helped me uncover trends in car pricing, efficiency, and popularity across different car types.
+
+Tools Used
+
+    Python: Core language for the project.
+    Pandas: Used for data manipulation and cleaning.
+    Matplotlib: Visualizing data through graphs.
+    Seaborn: Enhanced visualizations such as heatmaps.
+
+Learning Outcomes
+
+This project allowed me to:
+
+    Deepen my understanding of data cleaning processes, especially dealing with null and duplicate values.
+    Explore how visualizations like scatter plots, bar graphs, and heatmaps can communicate complex data insights.
+    Gain more experience working with outliers and understanding their impact on the analysis.
 
 Dataset
 
-The dataset consists of several columns such as:
-
-    Make: Manufacturer of the car.
-    Model: The model name of the car.
-    Year: The manufacturing year.
-    Transmission Type: The type of transmission (e.g., automatic, manual).
-    Driven Wheels: Type of drive system (e.g., front-wheel, rear-wheel).
-    Vehicle Size & Style: Categorization based on the car size and style.
-    MSRP: Manufacturer’s suggested retail price.
-
-Key Findings
-
-    Outlier Detection:
-        Outliers were identified in the MSRP column. The highest value was $2,065,902, which was verified as accurate and not due to data entry errors. The lowest value was $2000, attributed to a Dodge vehicle, and was also accurate.
-    Data Cleaning:
-        Null values were handled by either removing rows or filling in missing data where appropriate.
-        Duplicates were identified and removed based on a subset of columns (Make, Model, Year, etc.).
-    Visualizations:
-        Scatter Plots: Showed relationships between Driven Wheels and MSRP.
-        Histograms: Displayed the frequency distribution of MSRP values.
-        Heatmaps: Highlighted correlations between different numeric features.
-
-Visualizations
-
-Some key visualizations used in this project:
-
-    Boxplot: To visualize the spread and identify outliers in the MSRP column.
-    Scatter Plot: To understand the relationship between Driven Wheels and MSRP.
-    Histogram: To check the distribution of car prices (MSRP).
-    Heatmap: To observe correlations between features like MSRP, Year, etc.
-
-Tools & Libraries
-
-The following Python libraries were used for this analysis:
-
-    Pandas: For data manipulation and analysis.
-    Matplotlib: For creating static, animated, and interactive visualizations.
-    Seaborn: For statistical data visualization.
-
-Conclusion
-
-This project provided insights into how different car attributes affect their market price (MSRP). Handling outliers and cleaning data were key tasks, and visualizations helped uncover patterns and trends in the dataset.
+You can find the dataset here: https://www.kaggle.com/datasets/CooperUnion/cardataset
